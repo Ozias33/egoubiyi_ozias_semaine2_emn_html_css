@@ -1,16 +1,17 @@
-<style>
 img{
-    width: 350px;height: 250px;
+    width: 350px;
+    height: 250px;
     
 
 }
 
 header{
-    background-color: firebrick;
     color: azure;
     padding: 17px;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
+    background: linear-gradient(90deg, #f8d210, firebrick);
+
 }
 
 .header-container nav ul li {
@@ -37,36 +38,84 @@ header{
     padding: 20px;
  }
 #intro img{
-    width: 5O%;
-    border-radius: 10px;
+    width: 5;
+    border-radius: 0;
     box-shadow: 0px 4px 6px
     
 }
-#article {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, mimax(300px, 1fr));
-    gap: 20px;
+* 🌟 Articles */
+#articles {
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+#articles h2 {
     text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px firebrick;
+    font-size: 2.5em; /* Taille de police augmentée */
 }
+
+/* Ajout d'emoji au titre des articles */
+#articles h2::before {
+    content: "\1F4F0 "; /* Journal 📰 */
+}
+
+/* 🌟 Style des articles */
 article {
-    background-color: beige;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: Opx 4px 6px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px firebrick(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+    max-width: 800px;
+    position: relative;
+    color: aliceblue;
 }
+
+article h3 {
+    font-size: 1.8em; /* Taille de police augmentée */
+}
+
+/* 🎨 Effet au survol */
+article:hover {
+    transform: translateY(-5px);
+}
+
+/* 🌟 Images des articles */
 article img {
-    width: 50%;
+    max-width: 100%;
     border-radius: 10px;
-    text-align: ;
+    transition: transform 0.3s ease-in-out;
 }
+
+article img:hover {
+    transform: scale(1.05);
+}
+
+/* Ajout d'icônes aux titres des articles */
+article h3::before {
+    content: "\1F4DD "; /* Bloc-notes 📝 */
+    margin-right: 5px;
+}
+
+/* 🌟 Titres des articles */
 article h3 a {
-    text-decoration: brown;
-    color: brown;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease-in-out;
 }
+
 article h3 a:hover {
-color: aqua;
+    color: blanchedalmond;
 }
+
 
 #about table {
     width: 100%;
@@ -94,7 +143,7 @@ color: aqua;
 }
 
 #contact form button{
-    background-color: blue;
+    background: rgba(0, 0, 0, 0.7);
     color: beige;
     font-weight: bold;
     cursor: pointer;
@@ -106,7 +155,7 @@ color: aqua;
 footer {
     text-align: center;
     padding: 20px;
-    background-color: brown;
+    background: linear-gradient(90deg, #f8d210, firebrick);
     color: beige;
 }
 
@@ -119,4 +168,3 @@ footer a {
 footer a:hover {
     text-decoration: overline;
 }
-</style>
