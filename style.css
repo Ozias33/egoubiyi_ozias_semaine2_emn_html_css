@@ -127,6 +127,7 @@ article h3 a:hover {
     border: 1px solid #add;
     padding: 8px;
     text-align: left;
+    text-align: center;
 }
 #contact form {
     display: flex;
